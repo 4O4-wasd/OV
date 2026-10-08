@@ -1,5 +1,5 @@
 {
-  "$schema": "https://openapi.vercel.sh/vercel.json",
-  "framework": "@nestjs",
-  "region": "bom1"
+    "$schema": "https://openapi.vercel.sh/vercel.json",
+    "framework": "nestjs",
+    "regions": ["bom1"]
 }
