@@ -18,7 +18,7 @@ app.get(
     openAPIRouteHandler(app, {
         documentation: {
             info: {
-                title: "OV Auth API",
+                title: "OV API",
                 version: "1.0",
             },
             servers: [{ url: serverUrl }],

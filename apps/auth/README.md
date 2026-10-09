@@ -1,4 +1,4 @@
-# OV Auth API
+# OV API
 
 Auth service built with Hono, hono-openapi, Drizzle (libSQL/Turso), Redis, and Resend.
 
