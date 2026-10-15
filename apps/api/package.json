@@ -24,7 +24,6 @@
         "@upstash/ratelimit": "^2.2.0",
         "@upstash/redis": "^1.39.0",
         "argon2": "^0.45.1",
-        "disposable-email-domains": "^1.0.62",
         "dotenv": "^18.0.6",
         "drizzle-orm": "1.0.0-rc.4",
         "hono": "^4.13.13",
