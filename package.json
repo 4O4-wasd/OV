@@ -2,7 +2,11 @@
     "name": "ov",
     "private": true,
     "scripts": {
-        "prepare": "husky"
+        "prepare": "husky",
+        "api:dev": "pnpm --filter api dev",
+        "build": "pnpm -r build",
+        "check": "pnpm -r typecheck",
+        "api:openapi": "pnpm --filter api openapi"
     },
     "devDependencies": {
         "husky": "^9.1.7"

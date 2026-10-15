@@ -1,2 +1,2 @@
-task openapi:api
+pnpm api:openapi
 git add apps/api/openapi.json
