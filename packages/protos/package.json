@@ -1,0 +1,11 @@
+{
+    "name": "@repo/protos",
+    "version": "0.0.1",
+    "private": true,
+    "scripts": {
+        "check": "cargo check -p protos"
+    },
+    "dependencies": {
+        "@bufbuild/buf": "^1.73.0"
+    }
+}

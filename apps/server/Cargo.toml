@@ -5,3 +5,7 @@ edition = "2024"
 
 [dependencies]
 api-client = { workspace = true }
+protos = { workspace = true }
+tokio = { version = "1.53.3", features = ["rt-multi-thread", "macros"] }
+tonic = "0.14.6"
+tonic-reflection = "0.14.6"

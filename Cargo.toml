@@ -1,6 +1,7 @@
 [workspace]
 resolver = "3"
-members = ["apps/server","packages/api-client"]
+members = ["apps/server","packages/api-client", "packages/protos"]
 
 [workspace.dependencies]
 api-client = { path = "packages/api-client" }
+protos = { path = "packages/protos" }
