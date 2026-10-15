@@ -82,6 +82,10 @@ importers:
         specifier: ^6.0.2
         version: 6.0.3
 
+  apps/server: {}
+
+  packages/api-client: {}
+
 packages:
 
   '@babel/code-frame@7.29.7':

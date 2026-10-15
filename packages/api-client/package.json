@@ -1,0 +1,9 @@
+{
+    "name": "@repo/api-client",
+    "version": "0.0.1",
+    "private": true,
+    "license": "MIT",
+    "scripts": {
+        "check": "cargo check -p api-client"
+    }
+}

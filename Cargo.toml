@@ -1,0 +1,6 @@
+[workspace]
+resolver = "3"
+members = ["apps/server","packages/api-client"]
+
+[workspace.dependencies]
+api-client = { path = "packages/api-client" }

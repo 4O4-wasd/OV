@@ -28,6 +28,7 @@ signInRoute.post(
           'application/json': { schema: resolver(SignInResponseSchema) },
         },
       },
+      400: { description: 'Invalid request body' },
       401: { description: 'Invalid email or password' },
       429: { description: 'Too many requests' },
     },

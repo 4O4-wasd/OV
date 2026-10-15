@@ -10,7 +10,7 @@
         "dev": "tsx watch src/server.ts",
         "dev:vercel": "vercel dev",
         "start": "node dist/server.js",
-        "typecheck": "tsc --noEmit",
+        "check": "tsc --noEmit",
         "email:dev": "email dev --dir src/mail/templates",
         "db:generate": "drizzle-kit generate",
         "db:push": "drizzle-kit push",
