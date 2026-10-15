@@ -1,0 +1,2 @@
+task openapi:api
+git add apps/api/openapi.json

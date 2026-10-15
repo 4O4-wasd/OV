@@ -30,3 +30,8 @@ tasks:
     dir: apps/api
     cmds:
       - pnpm typecheck
+
+  openapi:api:
+    dir: apps/api
+    cmds:
+      - pnpm openapi
