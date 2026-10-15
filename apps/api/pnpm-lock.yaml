@@ -26,9 +26,6 @@ importers:
       argon2:
         specifier: ^0.45.1
         version: 0.45.1
-      disposable-email-domains:
-        specifier: ^1.0.62
-        version: 1.0.62
       dotenv:
         specifier: ^18.0.6
         version: 18.0.6
@@ -1011,9 +1008,6 @@ packages:
   detect-libc@2.1.2:
     resolution: {integrity: sha512-Btj2BOOO83o3WyH59e8MgXsxEQVcarkUOpEYrubB0urwnN10yQ364rsiByU11nZlqWYZm05i/of7io4mzihBtQ==}
     engines: {node: '>=8'}
-
-  disposable-email-domains@1.0.62:
-    resolution: {integrity: sha512-LBQvhRw7mznQTPoyZbsmYeNOZt1pN5aCsx4BAU/3siVFuiM9f2oyKzUaB8v1jbxFjE3aYqYiMo63kAL4pHgfWQ==}
 
   dom-serializer@2.0.0:
     resolution: {integrity: sha512-wIkAryiqt/nV5EQKqQpo3SToSOV9J0DnbJqwK7Wv/Trc92zIAYZ4FlMu+JPFW1DfGFt81ZTCGgDEabffXeLyJg==}
@@ -2325,8 +2319,6 @@ snapshots:
 
   detect-libc@2.1.2:
     optional: true
-
-  disposable-email-domains@1.0.62: {}
 
   dom-serializer@2.0.0:
     dependencies:
