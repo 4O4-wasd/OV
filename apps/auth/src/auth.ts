@@ -14,7 +14,7 @@ import * as schema from "./shared/db/schema.js";
 export const auth = betterAuth({
     appName: "OV",
     baseURL: authUrl,
-    trustedOrigins: [appUrl],
+    trustedOrigins: [appUrl, authUrl],
     database: drizzleAdapter(db, { provider: "sqlite", schema }),
     emailAndPassword: {
         enabled: true,
