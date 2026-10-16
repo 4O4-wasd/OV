@@ -50,6 +50,7 @@ dependencies = [
  "chrono",
  "futures",
  "progenitor",
+ "progenitor-client",
  "regress",
  "reqwest",
  "serde",

@@ -1,7 +1,7 @@
 import { Resend } from "resend";
 import { env } from "../env.js";
-import type { OtpPurpose } from "../shared/otp.shared.js";
-import OtpEmail from "./templates/otp.mail.js";
+
+export type OtpPurpose = "verify-email" | "reset-password";
 
 const SUBJECTS: Record<OtpPurpose, string> = {
     "verify-email": "Verify your email",
@@ -10,19 +10,15 @@ const SUBJECTS: Record<OtpPurpose, string> = {
 
 const FROM = `OV <no-reply@${env.DNS}>`;
 
-let resend: Resend | undefined;
-
-function getResend(): Resend {
-    resend ??= new Resend(env.RESEND_API_KEY);
-    return resend;
-}
+const resend = new Resend(env.RESEND_API_KEY);
 
 export async function sendOtpEmail(
     to: string,
     otp: string,
     purpose: OtpPurpose,
 ) {
-    const { error } = await getResend().emails.send({
+    const { default: OtpEmail } = await import("./templates/otp.mail.js");
+    const { error } = await resend.emails.send({
         from: FROM,
         to,
         subject: SUBJECTS[purpose],

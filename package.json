@@ -3,10 +3,10 @@
     "private": true,
     "scripts": {
         "prepare": "husky",
-        "api:dev": "pnpm --filter api dev",
-        "api:build": "pnpm --filter api build",
+        "auth:dev": "pnpm --filter auth dev",
+        "auth:build": "pnpm --filter auth build",
         "check": "pnpm -r check",
-        "api:openapi": "pnpm --filter api openapi"
+        "auth:openapi": "pnpm --filter auth openapi"
     },
     "devDependencies": {
         "husky": "^9.1.7"

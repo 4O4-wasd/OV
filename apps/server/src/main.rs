@@ -4,7 +4,7 @@ use protos::v1::{SayHelloRequest, SayHelloResponse};
 use tonic::{Request, Response, Status, transport::Server};
 
 #[derive(Default)]
-struct Greeter {}
+struct Greeter;
 
 #[tonic::async_trait]
 impl GreeterService for Greeter {
@@ -32,7 +32,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
 
     Server::builder()
         .add_service(reflection)
-        .add_service(GreeterServiceServer::new(Greeter {}))
+        .add_service(GreeterServiceServer::new(Greeter))
         .serve(addr)
         .await?;
 
