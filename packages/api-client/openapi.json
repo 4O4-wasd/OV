@@ -236,7 +236,7 @@
   ],
   "servers": [
     {
-      "url": "https://ov.404wasd.com/api/auth"
+      "url": "https://auth.ov.404wasd.com/api/auth"
     }
   ],
   "tags": [

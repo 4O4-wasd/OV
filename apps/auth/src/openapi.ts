@@ -14,7 +14,7 @@ export async function getOpenApiDocument() {
         },
         servers: [
             {
-                url: `${env.BETTER_AUTH_URL ?? `https://${env.DNS}`}/api/auth`,
+                url: `${env.BETTER_AUTH_URL ?? `https://auth.${env.DNS}`}/api/auth`,
             },
         ],
     };
