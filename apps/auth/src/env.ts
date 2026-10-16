@@ -17,3 +17,4 @@ export type Env = z.infer<typeof envSchema>;
 export const env = envSchema.parse(process.env);
 
 export const authUrl = `https://auth.${env.DNS}`;
+export const appUrl = `https://${env.DNS}`;
