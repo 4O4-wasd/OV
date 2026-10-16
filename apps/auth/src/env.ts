@@ -8,8 +8,6 @@ export const envSchema = z.object({
     LIBSQL_URL: z.string().min(1),
     LIBSQL_AUTH_TOKEN: z.string().optional(),
     RESEND_API_KEY: z.string().startsWith("re_"),
-    BETTER_AUTH_SECRET: z.string().min(32),
-    BETTER_AUTH_URL: z.url().optional(),
     DNS: z.string().regex(domainRegex).catch("localhost:3000"),
 });
 
