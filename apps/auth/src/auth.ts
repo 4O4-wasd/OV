@@ -6,13 +6,14 @@ import { openAPI } from "better-auth/plugins";
 import { bearer } from "better-auth/plugins/bearer";
 import { emailOTP } from "better-auth/plugins/email-otp";
 import { username } from "better-auth/plugins/username";
-import "./env.js";
+import { authUrl } from "./env.js";
 import { sendOtpEmail } from "./mail/index.mail.js";
 import { db } from "./shared/db/index.js";
 import * as schema from "./shared/db/schema.js";
 
 export const auth = betterAuth({
     appName: "OV",
+    baseURL: authUrl,
     database: drizzleAdapter(db, { provider: "sqlite", schema }),
     emailAndPassword: {
         enabled: true,

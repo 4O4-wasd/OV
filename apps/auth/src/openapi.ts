@@ -1,5 +1,5 @@
 import { auth } from "./auth.js";
-import { env } from "./env.js";
+import { authUrl } from "./env.js";
 
 export async function getOpenApiDocument() {
     const document = await auth.api.generateOpenAPISchema();
@@ -14,7 +14,7 @@ export async function getOpenApiDocument() {
         },
         servers: [
             {
-                url: `https://auth.${env.DNS}/api/auth`,
+                url: `${authUrl}/api/auth`,
             },
         ],
     };
