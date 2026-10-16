@@ -215,12 +215,6 @@
       }
     },
     "securitySchemes": {
-      "apiKeyCookie": {
-        "type": "apiKey",
-        "in": "cookie",
-        "name": "apiKeyCookie",
-        "description": "API Key authentication via cookie"
-      },
       "bearerAuth": {
         "type": "http",
         "scheme": "bearer",
@@ -230,7 +224,6 @@
   },
   "security": [
     {
-      "apiKeyCookie": [],
       "bearerAuth": []
     }
   ],

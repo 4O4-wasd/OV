@@ -12,6 +12,13 @@ export async function getOpenApiDocument() {
                 "Authentication API with email and password sign-in, OTP email verification, password reset, and session management.",
             license: { name: "MIT", identifier: "MIT" },
         },
+        components: {
+            ...document.components,
+            securitySchemes: {
+                bearerAuth: document.components.securitySchemes.bearerAuth,
+            },
+        },
+        security: [{ bearerAuth: [] }],
         servers: [
             {
                 url: `${authUrl}/api/auth`,
