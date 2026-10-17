@@ -3,10 +3,11 @@
     "private": true,
     "scripts": {
         "prepare": "husky",
-        "auth:dev": "pnpm --filter auth dev",
-        "auth:build": "pnpm --filter auth build",
-        "check": "pnpm -r check",
-        "auth:openapi": "pnpm --filter auth openapi"
+        "auth:dev": "pnpm -C apps/auth dev",
+        "auth:build": "pnpm -C apps/auth build",
+        "check": "pnpm -C apps/auth check && cargo check --workspace",
+        "auth:openapi": "pnpm -C apps/auth openapi",
+        "server:dev": "cargo run -p server"
     },
     "devDependencies": {
         "husky": "^9.1.7"

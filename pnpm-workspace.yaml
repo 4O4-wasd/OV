@@ -1,8 +1,0 @@
-packages:
-    - apps/*
-    - packages/*
-
-allowBuilds:
-    "@bufbuild/buf": true
-    argon2: true
-    esbuild: true

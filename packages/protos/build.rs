@@ -7,9 +7,8 @@ use prost::Message;
 fn main() -> Result<(), Box<dyn Error>> {
     let descriptor_path = PathBuf::from(std::env::var("OUT_DIR")?).join("fds.binpb");
 
-    let pnpx = if cfg!(windows) { "pnpx.cmd" } else { "pnpx" };
-    let status = Command::new(pnpx)
-        .args(["@bufbuild/buf", "build", "-o"])
+    let status = Command::new("buf")
+        .args(["build", "-o"])
         .arg(&descriptor_path)
         .status()?;
 
